@@ -4,97 +4,50 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Garanta seu ebook agora!</title>
+  <title>Minha Biblioteca de Ebooks</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="icon" type="image/png" href="assets/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <meta name="description"
-    content="Adquira o ebook 'Desperte Seu Potencial' e comece sua jornada de autoconhecimento, inteligência emocional e produtividade.">
   <style>
     :root {
       --bg: #0f1724;
       --card: #0b1220;
       --accent: #7dd3fc;
       --muted: #94a3b8;
-      --glass: rgba(255, 255, 255, 0.04);
       font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-
-    * {
-      box-sizing: border-box
     }
 
     body {
       margin: 0;
       background: linear-gradient(180deg, #071226 0%, #071826 60%), var(--bg);
       color: #e6eef8;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
 
     .container {
-      max-width: 980px;
-      width: 95%;
+      max-width: 1200px;
       margin: 40px auto;
-      padding: 28px;
+      padding: 20px;
     }
 
     header {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      margin-bottom: 28px
+      text-align: center;
+      margin-bottom: 40px;
     }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px
-    }
-
-    .logo {
-      width: 62px;
-      height: 62px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--accent), #60a5fa);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      color: #04263b;
-      font-size: 20px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-    }
-
-    h1 {
+    header h1 {
       margin: 0;
-      font-size: 22px
+      font-size: 26px;
     }
 
-    p.lead {
-      margin: 6px 0 0;
-      color: var(--muted)
+    header p {
+      color: var(--muted);
+      margin-top: 8px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: 1fr 360px;
-      gap: 22px;
-      margin-top: 18px
-    }
-
-    @media (max-width: 920px) {
-      .grid {
-        grid-template-columns: 1fr;
-        /* só uma coluna */
-        padding: 0 16px;
-      }
-
-      .right-col {
-        position: static;
-        /* evita scroll lateral */
-        width: 100%;
-      }
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
     }
 
     .card {
@@ -102,138 +55,54 @@
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
-      border: 1px solid rgba(255, 255, 255, 0.03);
-    }
-
-    .hero {
+      border: 1px solid rgba(255, 255, 255, 0.05);
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      padding: 28px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card img {
+      width: 160px;
+      height: auto;
       border-radius: 12px;
-      background: linear-gradient(135deg, rgba(125, 211, 252, 0.06), rgba(96, 165, 250, 0.02));
-      border: 1px solid rgba(125, 211, 252, 0.08)
+      margin-bottom: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
     }
 
-    .card,
-    .hero {
-      width: 100%;
-      box-sizing: border-box;
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 18px;
     }
 
-    .cta-row {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 8px
+    .card p {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 16px;
     }
 
     .btn {
       background: linear-gradient(180deg, var(--accent), #60a5fa);
       color: #04263b;
-      padding: 12px 16px;
+      padding: 10px 16px;
       border-radius: 10px;
       font-weight: 600;
       border: none;
       cursor: pointer;
-      box-shadow: 0 8px 18px rgba(96, 165, 250, 0.12);
       text-decoration: none;
-      display: inline-block
+      display: inline-block;
+      transition: 0.2s;
     }
 
-    .btn.ghost {
-      background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      color: var(--accent)
-    }
-
-    .small {
-      font-size: 13px;
-      color: var(--muted)
-    }
-
-    .toc {
-      margin-top: 16px
-    }
-
-    .chapter {
-      border-radius: 10px;
-      padding: 12px;
-      margin-bottom: 10px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent);
-      display: flex;
-      justify-content: space-between;
-      align-items: center
-    }
-
-    .chapter h3 {
-      margin: 0;
-      font-size: 15px
-    }
-
-    .chapter small {
-      color: var(--muted)
-    }
-
-    .summary {
-      margin-top: 16px;
-      line-height: 1.5;
-      color: #d7e9fb
-    }
-
-    .download-info {
-      font-size: 13px;
-      color: var(--muted);
-      margin-top: 8px
-    }
-
-    .right-col {
-      position: sticky;
-      top: 28px;
-      height: fit-content;
-    }
-
-    .panel-title {
-      font-weight: 700;
-      margin-bottom: 12px
-    }
-
-    .email-capture {
-      display: flex;
-      gap: 8px;
-      margin-top: 12px
-    }
-
-    input[type="email"] {
-      flex: 1;
-      padding: 10px;
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.04);
-      background: transparent;
-      color: inherit
-    }
-
-    .small-muted {
-      color: var(--muted);
-      font-size: 13px
+    .btn:hover {
+      transform: scale(1.05);
     }
 
     footer {
-      margin-top: 30px;
-      color: var(--muted);
+      margin-top: 40px;
+      text-align: center;
       font-size: 13px;
-      text-align: center
-    }
-
-    @media (max-width:920px) {
-      .grid {
-        grid-template-columns: 1fr;
-        padding-bottom: 30px
-      }
-
-      .right-col {
-        position: static
-      }
+      color: var(--muted);
     }
   </style>
 </head>
@@ -241,92 +110,52 @@
 <body>
   <div class="container">
     <header>
-      <div class="brand">
-        <div class="logo">
-          <img src="assets/img/logo.png" alt="Desperte Seu Potencial"
-            style="width:100%; height:100%; object-fit:contain; border-radius:12px;">
-        </div>
-        <div>
-          <h1>Desperte Seu Potencial</h1>
-          <p class="lead">Transforme sua inteligência emocional, produtividade e mindset em resultados reais.</p>
-        </div>
-      </div>
+      <h1>📚 Minha Biblioteca de Ebooks</h1>
+      <p>Escolha seu ebook e receba acesso imediato no seu e-mail após pagamento via Pix ou cartão.</p>
     </header>
 
     <main class="grid">
-      <section class="card">
-        <div class="hero">
+      <!-- Livro 1 -->
+      <div class="card">
+        <img src="assets/img/capa-bookIE.png" alt="Capa do ebook">
+        <h2>Desperte Seu Potencial</h2>
+        <p>Guia prático de inteligência emocional, produtividade e mindset.</p>
+        <a class="btn" href="venda-LivroIE.html" target="_blank">Ver mais</a>
+      </div>
 
-          <img src="assets/img/capa-ebook.png" alt="Capa do ebook Desperte Seu Potencial"
-            style="display:block; margin:0 auto; width:100%; max-width:200px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.4); margin-bottom:16px;">
+      <!-- Livro 2 -->
+      <div class="card">
+        <img src="assets/img/capa-bookND.png" alt="Capa do ebook">
+        <h2>Negócio Digital Escalável</h2>
+        <p>Estratégias mordenas para criar, crescer e automaticamente sua presença online.</p>
+        <a class="btn" href="venda-LivroND.html" target="_blank">Ver mais</a>
+      </div>
 
-          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
-            <div>
-              <strong style="font-size:16px">Transforme seu potencial agora!</strong>
-              <div class="small">Adquira o ebook e inicie sua jornada de crescimento pessoal.</div>
-            </div>
-          </div>
+      <!-- Livro 3 -->
+      <!-- <div class="card">
+        <img src="assets/img/livro2.png" alt="Capa do ebook">
+        <h2>50 Frases Infalíveis</h2>
+        <p>Frases prontas para puxar assunto e nunca ficar sem resposta.</p>
+        <a class="btn" href="https://seu-link-pagamento.com" target="_blank">Comprar por R$27</a>
+      </div> -->
 
-          <div style="margin-bottom:12px; font-weight:700; font-size:16px; color:#FACC15;">
-            🔥 Mais de 40 vendidos! Aproveite antes que acabe!
-          </div>
+      <!-- Livro 4 -->
+      <!-- <div class="card">
+        <img src="assets/img/livro3.png" alt="Capa do ebook">
+        <h2>Guia do Primeiro Encontro</h2>
+        <p>Checklist rápido para impressionar e garantir o próximo encontro.</p>
+        <a class="btn" href="https://seu-link-pagamento.com" target="_blank">Comprar por R$37</a>
+      </div> -->
 
-
-          <div class="cta-row">
-            <a class="btn" href="https://pag.ae/7_ZQZNVMa" target="_blank">Comprar agora em até 12x</a>
-            <button class="btn ghost" id="copyPix" title="Copiar chave Pix">Copiar chave Pix</button>
-          </div>
-
-          <div class="download-info small-muted">
-            Pague com Pix ou cartão em até 12x e tenha acesso imediato ao seu ebook.
-          </div>
-        </div>
-
-        <div class="toc">
-          <h2 style="font-size:18px;margin-bottom:8px">Resumo rápido</h2>
-          <p class="summary">
-            <strong>Desperte Seu Potencial</strong> guia você por inteligência emocional, produtividade,
-            autoconhecimento, mindset e execução de metas.
-            Cada capítulo termina com reflexão profunda e um desafio prático para transformar teoria em hábito.
-          </p>
-        </div>
-      </section>
-
-      <aside class="right-col card">
-        <div>
-          <div class="panel-title">Detalhes do pedido</div>
-          <div class="small-muted">Produto</div>
-          <div style="font-weight:700;margin-bottom:8px">Desperte Seu Potencial — ebook</div>
-
-          <div class="small-muted">Formato</div>
-          <div style="margin-bottom:12px">PDF / EPUB</div>
-
-          <div class="small-muted">Chave Pix</div>
-          <div style="font-weight:700" id="pixKey">apolinario.izabela@gmail.com</div>
-        </div>
-      </aside>
     </main>
 
     <footer>
-      <div>© <span id="year"></span> — Izabela Apolinário • Todos os direitos reservados</div>
+      © <span id="year"></span> — Izabela Apolinário • Todos os direitos reservados
     </footer>
   </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    const copyPix = document.getElementById('copyPix');
-    const pixKeyElem = document.getElementById('pixKey');
-
-    copyPix.addEventListener('click', async () => {
-      const key = pixKeyElem.textContent.trim();
-      try {
-        await navigator.clipboard.writeText(key);
-        copyPix.textContent = 'Copiado ✓';
-        setTimeout(() => copyPix.textContent = 'Copiar chave Pix', 1800);
-      } catch (err) {
-        alert('Não foi possível copiar automaticamente. Copie manualmente: ' + key);
-      }
-    });
   </script>
 </body>
 
