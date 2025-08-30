@@ -241,29 +241,29 @@
 <body>
 
   <button class="hamburger" aria-label="Abrir menu">&#9776;</button>
-<!-- menu.html -->
-<nav class="sidebar">
-  <div class="sidebar-header">
-    <h2>📚 Biblioteca</h2>
-  </div>
-  <ul class="menu">
-    <li><a href="index.html">Home</a></li>
-   <li class="has-submenu">
-    <a href="#">Livros</a>
-    <ul class="submenu">
-      <li><a href="venda-LivroIE.html">Desperte Seu Potencial</a></li>
-      <li><a href="venda-LivroND.html">Negócio Digital Escalável</a></li>
-      <li><a href="venda-LivroSBE.html">Saúde e Bem-Estar</a></li>
+  <!-- menu.html -->
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>📚 Biblioteca</h2>
+    </div>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-submenu">
+        <a href="#">Livros</a>
+        <ul class="submenu">
+          <li><a href="venda-LivroIE.html">Desperte Seu Potencial</a></li>
+          <li><a href="venda-LivroND.html">Negócio Digital Escalável</a></li>
+          <li><a href="venda-LivroSBE.html">Saúde e Bem-Estar</a></li>
+        </ul>
+      </li>
+      <li><a href="https://izabelaapolinario.github.io/ivorya/#/sobre">Sobre</a></li>
+      <li><a href="https://izabelaapolinario.github.io/ivorya/#/contato">Contato</a></li>
     </ul>
-  </li>
-    <li><a href="https://izabelaapolinario.github.io/ivorya/#/sobre">Sobre</a></li>
-    <li><a href="https://izabelaapolinario.github.io/ivorya/#/contato">Contato</a></li>
-  </ul>
-</nav>
-<link rel="stylesheet" href="menu/menu.css">
-<script src="menu/menu.js" defer></script>
+  </nav>
+  <link rel="stylesheet" href="menu/menu.css">
+  <script src="menu/menu.js" defer></script>
 
-<div class="sidebar-overlay"></div>
+  <div class="sidebar-overlay"></div>
 
   <div class="container">
     <header>
@@ -288,7 +288,7 @@
 
           <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
             <div>
-              <strong style="font-size:16px">Transforme seu potencial agora!</strong>
+              <strong style="font-size:16px">Transforme seu négocio agora!</strong>
               <div class="small">Adquira o ebook e inicie sua jornada de crescimento pessoal.</div>
             </div>
           </div>
@@ -299,12 +299,12 @@
 
 
           <div class="cta-row">
-            <a class="btn" href="https://pag.ae/7_ZQZNVMa" target="_blank">Comprar agora em até 12x</a>
+            <a class="btn" href="https://pag.ae/7_-tyrGr6" target="_blank">Comprar agora</a>
             <button class="btn ghost" id="copyPix" title="Copiar chave Pix">Copiar chave Pix</button>
           </div>
 
           <div class="download-info small-muted">
-            Pague com Pix ou cartão em até 12x e tenha acesso imediato ao seu ebook.
+            Pague com Pix ou cartão em até 18x e tenha acesso imediato ao seu ebook.
           </div>
         </div>
 
@@ -319,37 +319,42 @@
             seja no início do seu negócio online ou na hora de escalar o que já funciona.
           </p>
         </div>
+
+         <img src="assets/img/capa-bookND.png" alt="Capa do ebook Desperte Seu Potencial" class="book-cover">
+        <img src="assets/img/capa2ND.png" alt="Capa do ebook Desperte Seu Potencial" class="book-cover">
+
       </section>
 
 
       <aside class="right-col card">
-  <div>
-    <div class="panel-title">Detalhes do pedido</div>
-    
-    <div class="small-muted">Produto</div>
-    <div style="font-weight:700;margin-bottom:8px">
-      Negócio Digital Escalável — ebook
-    </div>
+        <div>
+          <div class="panel-title">Detalhes do pedido</div>
 
-    <div class="small-muted">Formato</div>
-    <div style="margin-bottom:12px">PDF / EPUB</div>
+          <div class="small-muted">Produto</div>
+          <div style="font-weight:700;margin-bottom:8px">
+            Negócio Digital Escalável — ebook
+          </div>
 
-    <div class="small-muted">Preço</div>
-    <div style="font-weight:700;margin-bottom:12px">R$ 41,89</div>
+          <div class="small-muted">Formato</div>
+          <div style="margin-bottom:12px">PDF / EPUB</div>
 
-    <div class="small-muted">Chave Pix</div>
-    <div style="font-weight:700;margin-bottom:8px" id="pixKey">
-      apolinario.izabela@gmail.com
-    </div>
-    <button onclick="navigator.clipboard.writeText(document.getElementById('pixKey').innerText)" style="padding:6px 12px;cursor:pointer">
-      Copiar Chave Pix
-    </button>
+          <div class="small-muted">Preço</div>
+          <div style="font-weight:700;margin-bottom:12px">R$ 41,89</div>
 
-    <p style="margin-top:12px;font-size:13px;color:#666">
-      📩 O ebook será enviado automaticamente para o seu e-mail após a confirmação do pagamento.
-    </p>
-  </div>
-</aside>
+          <div class="small-muted">Chave Pix</div>
+          <div style="font-weight:700;margin-bottom:8px" id="pixKey">
+            apolinario.izabela@gmail.com
+          </div>
+          <button onclick="navigator.clipboard.writeText(document.getElementById('pixKey').innerText)"
+            style="padding:6px 12px;cursor:pointer">
+            Copiar Chave Pix
+          </button>
+
+          <p style="margin-top:12px;font-size:13px;color:#666">
+            📩 O ebook será enviado automaticamente para o seu e-mail após a confirmação do pagamento.
+          </p>
+        </div>
+      </aside>
 
     </main>
 

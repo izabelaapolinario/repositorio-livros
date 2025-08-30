@@ -240,30 +240,30 @@
 
 <body>
 
-    <button class="hamburger" aria-label="Abrir menu">&#9776;</button>
-<!-- menu.html -->
-<nav class="sidebar">
-  <div class="sidebar-header">
-    <h2>📚 Biblioteca</h2>
-  </div>
-  <ul class="menu">
-    <li><a href="index.html">Home</a></li>
-   <li class="has-submenu">
-    <a href="#">Livros</a>
-    <ul class="submenu">
-      <li><a href="venda-LivroIE.html">Desperte Seu Potencial</a></li>
-      <li><a href="venda-LivroND.html">Negócio Digital Escalável</a></li>
-      <li><a href="venda-LivroSBE.html">Saúde e Bem-Estar</a></li>
+  <button class="hamburger" aria-label="Abrir menu">&#9776;</button>
+  <!-- menu.html -->
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>📚 Biblioteca</h2>
+    </div>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-submenu">
+        <a href="#">Livros</a>
+        <ul class="submenu">
+          <li><a href="venda-LivroIE.html">Desperte Seu Potencial</a></li>
+          <li><a href="venda-LivroND.html">Negócio Digital Escalável</a></li>
+          <li><a href="venda-LivroSBE.html">Saúde e Bem-Estar</a></li>
+        </ul>
+      </li>
+      <li><a href="https://izabelaapolinario.github.io/ivorya/#/sobre">Sobre</a></li>
+      <li><a href="https://izabelaapolinario.github.io/ivorya/#/contato">Contato</a></li>
     </ul>
-  </li>
-    <li><a href="https://izabelaapolinario.github.io/ivorya/#/sobre">Sobre</a></li>
-    <li><a href="https://izabelaapolinario.github.io/ivorya/#/contato">Contato</a></li>
-  </ul>
-</nav>
-<link rel="stylesheet" href="menu/menu.css">
-<script src="menu/menu.js" defer></script>
+  </nav>
+  <link rel="stylesheet" href="menu/menu.css">
+  <script src="menu/menu.js" defer></script>
 
-<div class="sidebar-overlay"></div>
+  <div class="sidebar-overlay"></div>
 
   <div class="container">
     <header>
@@ -282,40 +282,46 @@
     <main class="grid">
       <section class="card">
         <div class="hero">
+          <div class="book-viewer">
+            <div class="book-page">
 
-          <img src="assets/img/capa-bookIE.png" alt="Capa do ebook Desperte Seu Potencial"
+             <img src="assets/img/capa-bookIE.png" alt="Capa do ebook Desperte Seu Potencial"
             style="display:block; margin:0 auto; width:100%; max-width:200px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.4); margin-bottom:16px;">
 
-          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
-            <div>
-              <strong style="font-size:16px">Transforme seu potencial agora!</strong>
-              <div class="small">Adquira o ebook e inicie sua jornada de crescimento pessoal.</div>
+            </div>
+
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+              <div>
+                <strong style="font-size:16px">Transforme seu potencial agora!</strong>
+                <div class="small">Adquira o ebook e inicie sua jornada de crescimento pessoal.</div>
+              </div>
+            </div>
+
+            <div style="margin-bottom:12px; font-weight:700; font-size:16px; color:#FACC15;">
+              🔥 Mais de 40 vendidos! Aproveite antes que acabe!
+            </div>
+
+
+            <div class="cta-row">
+              <a class="btn" href="https://pag.ae/7_ZQZNVMa" target="_blank">Comprar agora</a>
+              <button class="btn ghost" id="copyPix" title="Copiar chave Pix">Copiar chave Pix</button>
+            </div>
+
+            <div class="download-info small-muted">
+              Pague com Pix ou cartão em até 18x e tenha acesso imediato ao seu ebook.
             </div>
           </div>
 
-          <div style="margin-bottom:12px; font-weight:700; font-size:16px; color:#FACC15;">
-            🔥 Mais de 40 vendidos! Aproveite antes que acabe!
+          <div class="toc">
+            <h2 style="font-size:18px;margin-bottom:8px">Resumo rápido</h2>
+            <p class="summary">
+              <strong>Desperte Seu Potencial</strong> guia você por inteligência emocional, produtividade,
+              autoconhecimento, mindset e execução de metas.
+              Cada capítulo termina com reflexão profunda e um desafio prático para transformar teoria em hábito.
+            </p>
           </div>
-
-
-          <div class="cta-row">
-            <a class="btn" href="https://pag.ae/7_ZQZNVMa" target="_blank">Comprar agora em até 12x</a>
-            <button class="btn ghost" id="copyPix" title="Copiar chave Pix">Copiar chave Pix</button>
-          </div>
-
-          <div class="download-info small-muted">
-            Pague com Pix ou cartão em até 12x e tenha acesso imediato ao seu ebook.
-          </div>
-        </div>
-
-        <div class="toc">
-          <h2 style="font-size:18px;margin-bottom:8px">Resumo rápido</h2>
-          <p class="summary">
-            <strong>Desperte Seu Potencial</strong> guia você por inteligência emocional, produtividade,
-            autoconhecimento, mindset e execução de metas.
-            Cada capítulo termina com reflexão profunda e um desafio prático para transformar teoria em hábito.
-          </p>
-        </div>
+               <img src="assets/img/capa-bookIE.png" alt="Capa do ebook Desperte Seu Potencial" class="book-cover">
+                <img src="assets/img/Capa2IE.png" alt="Capa do ebook Desperte Seu Potencial" class="book-cover">
       </section>
 
       <aside class="right-col card">

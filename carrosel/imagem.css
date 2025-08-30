@@ -1,0 +1,36 @@
+.book-viewer {
+  position: relative;
+  max-width: 400px; /* limite no desktop */
+  margin: auto;
+}
+
+.book-page {
+  position: relative;
+  overflow: hidden;
+}
+
+.book-img {
+  width: 100%;
+  display: none;
+  cursor: zoom-in;
+}
+
+.book-img.active {
+  display: block;
+}
+
+/* Botões de navegação */
+.book-viewer button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.book-viewer .prev { left: 10px; }
+.book-viewer .next { right: 10px; }

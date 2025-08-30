@@ -127,3 +127,13 @@
 .menu .submenu li a:hover {
   background: #f2f2f2;
 }
+
+.book-cover {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 450px; /* aumenta aqui (300px, 350px, etc) */
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  margin-bottom: 16px;
+}
